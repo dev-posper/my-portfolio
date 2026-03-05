@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Portfolio | Prosper Akota</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">AUDIT <span>PROFILE</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#engagements">Engagements</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero section-shell">
+            <div class="hero-content panel-3d">
+                <p class="intro">Independent Auditor</p>
+                <h1>Prosper Akota</h1>
+                <p class="lead">I help businesses strengthen controls, reduce risk exposure, and improve compliance through practical audit insights.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#engagements">View Engagements</a>
+                    <a class="btn btn-ghost" href="#contact">Request Consultation</a>
+                </div>
+            </div>
+            <div class="hero-card panel-3d">
+                <h3>Quick Highlights</h3>
+                <ul>
+                    <li>Internal and External Audit Support</li>
+                    <li>Risk and Control Evaluation</li>
+                    <li>Compliance and Reporting Advisory</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="section-shell">
+            <h2 class="section-title">About Me</h2>
+            <div class="grid-2">
+                <article class="card panel-3d">
+                    <h3>Professional Profile</h3>
+                    <p>
+                        I provide independent assurance services focused on control effectiveness,
+                        financial integrity, and regulatory compliance.
+                    </p>
+                </article>
+                <article class="card panel-3d">
+                    <h3>Core Skills</h3>
+                    <p>Internal Controls, Risk Assessment, IFRS/GAAP Review, Audit Documentation, Compliance Monitoring, and Management Reporting.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="services" class="section-shell">
+            <h2 class="section-title">Services</h2>
+            <div class="grid-3">
+                <article class="card panel-3d">
+                    <h3>Internal Audit</h3>
+                    <p>Evaluate process controls and identify gaps that impact governance and operational performance.</p>
+                </article>
+                <article class="card panel-3d">
+                    <h3>Risk Assessment</h3>
+                    <p>Prioritize key financial and operational risks with clear mitigation recommendations.</p>
+                </article>
+                <article class="card panel-3d">
+                    <h3>Compliance Review</h3>
+                    <p>Support readiness for statutory requirements, policy adherence, and audit trail quality.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="engagements" class="section-shell">
+            <h2 class="section-title">Engagement Highlights</h2>
+            <div class="grid-3">
+                <article class="card panel-3d project-card">
+                    <h3>Control Environment Review</h3>
+                    <p>Led assessment of approval workflows and segregation of duties for a mid-size organization.</p>
+                </article>
+                <article class="card panel-3d project-card">
+                    <h3>Financial Process Audit</h3>
+                    <p>Reviewed receivables and payables cycles, improving reconciliation accuracy and reporting speed.</p>
+                </article>
+                <article class="card panel-3d project-card">
+                    <h3>Compliance Health Check</h3>
+                    <p>Validated documentation and monitoring controls for regulatory and policy compliance readiness.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cv" class="section-shell">
+            <h2 class="section-title">CV and Credentials</h2>
+            <div class="grid-2">
+                <div class="card panel-3d">
+                    <h3>Update CV Link</h3>
+                    <label for="cvName">CV File Name</label>
+                    <input id="cvName" type="text" placeholder="e.g., Prosper_Akota_Auditor_CV.pdf">
+
+                    <label for="cvUrl">CV URL</label>
+                    <input id="cvUrl" type="url" placeholder="Paste your CV or certification profile link">
+
+                    <button id="updateCvBtn" class="btn btn-primary" type="button">Update CV</button>
+                    <p class="helper">Tip: Upload your CV to Google Drive/Dropbox and include certifications in the file name.</p>
+                </div>
+
+                <div class="card panel-3d">
+                    <h3>Current CV</h3>
+                    <p id="cvStatus">No CV link saved yet.</p>
+                    <a id="downloadCvBtn" class="btn btn-ghost disabled" href="#" target="_blank" rel="noopener">Download CV</a>
+
+                    <hr>
+
+                    <label for="cvFile">Or use local file for this session</label>
+                    <input id="cvFile" type="file" accept=".pdf,.doc,.docx">
+                    <button id="useLocalCvBtn" class="btn btn-primary" type="button">Use Selected File</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-shell">
+            <h2 class="section-title">Email Inquiry</h2>
+            <div class="card panel-3d contact-card">
+                <form class="contact-form" action="uwamehprosper45@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" placeholder="Audit service request" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Share your audit or compliance needs..." required></textarea>
+
+                    <button class="btn btn-primary" type="submit">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>(c) 2026 Prosper Akota. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const cvNameInput = document.getElementById('cvName');
+        const cvUrlInput = document.getElementById('cvUrl');
+        const updateCvBtn = document.getElementById('updateCvBtn');
+        const cvStatus = document.getElementById('cvStatus');
+        const downloadCvBtn = document.getElementById('downloadCvBtn');
+        const cvFileInput = document.getElementById('cvFile');
+        const useLocalCvBtn = document.getElementById('useLocalCvBtn');
+
+        function setCvLink(name, url) {
+            if (!url) {
+                cvStatus.textContent = 'No CV link saved yet.';
+                downloadCvBtn.classList.add('disabled');
+                downloadCvBtn.removeAttribute('href');
+                return;
+            }
+
+            cvStatus.textContent = `Current CV: ${name || 'My_CV.pdf'}`;
+            downloadCvBtn.href = url;
+            downloadCvBtn.classList.remove('disabled');
+        }
+
+        const storedName = localStorage.getItem('cvName');
+        const storedUrl = localStorage.getItem('cvUrl');
+        if (storedUrl) {
+            setCvLink(storedName, storedUrl);
+        }
+
+        updateCvBtn.addEventListener('click', () => {
+            const name = cvNameInput.value.trim();
+            const url = cvUrlInput.value.trim();
+
+            if (!url) {
+                alert('Please enter a valid CV URL.');
+                return;
+            }
+
+            localStorage.setItem('cvName', name || 'My_CV.pdf');
+            localStorage.setItem('cvUrl', url);
+            setCvLink(name, url);
+        });
+
+        useLocalCvBtn.addEventListener('click', () => {
+            const selectedFile = cvFileInput.files[0];
+            if (!selectedFile) {
+                alert('Please select a file first.');
+                return;
+            }
+
+            const localUrl = URL.createObjectURL(selectedFile);
+            setCvLink(selectedFile.name, localUrl);
+        });
+    </script>
+</body>
+</html>
